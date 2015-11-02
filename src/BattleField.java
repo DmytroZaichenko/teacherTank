@@ -3,6 +3,7 @@
  */
 public class BattleField {
 
+    public final boolean COLORED_MODE = false;
     private String[][] battleField = {
             { "B", "B", " ", "B", " ", "B", " ", "B", "B" },
             { "B", " ", " ", " ", " ", " ", " ", " ", "B" },

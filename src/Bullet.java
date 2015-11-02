@@ -3,7 +3,7 @@
  */
 public class Bullet {
 
-    public final int SPEED = 5;
+    private int speed = 10;
     private int x;
     private int y;
     private int direction;
@@ -22,18 +22,21 @@ public class Bullet {
         return y;
     }
 
+    public int getSpeed() {
+        return speed;
+    }
 
     public int getDirection() {
         return direction;
     }
 
 
-    public int updateX(int x){
-        return this.x + x;
+    public void updateX(int x){
+        this.x += x;
     }
 
-    public int updateY(int y){
-        return this.y + y;
+    public void updateY(int y){
+        this.y += y;
     }
 
     public void destroy(){
