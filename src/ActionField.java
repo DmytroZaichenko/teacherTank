@@ -90,10 +90,11 @@ public class ActionField extends JPanel{
     public void runTheGame() throws Exception{
 
         //tank.move();
-        tank.fire();
-        tank.fire();
-        tank.turn(4);
-        tank.move();
+//        tank.fire();
+//        tank.fire();
+//        tank.turn(4);
+//        tank.move();
+          tank.moveToQuadrant(2,8);
 
     }
 
@@ -148,7 +149,7 @@ public class ActionField extends JPanel{
                 || (direction == 3 && tank.getX() == 0)
                 || (direction == 4 && tank.getX() >= 512)
                 || (direction < 1 || direction > 4)
-                || (nextQuadrantBrik(direction))
+                //|| (nextQuadrantBrik(direction))
                 ) {
             return true;
         }
